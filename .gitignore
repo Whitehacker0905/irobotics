@@ -1,0 +1,9 @@
+# Original archive and extraction artifacts
+WebsiteRobotics.zip
+extracted/
+__MACOSX/
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+._*

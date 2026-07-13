@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact — SENTINEL Defense Systems</title>
+<meta name="description" content="Request a capabilities brief or talk to the SENTINEL team about procurement, integration, and sustainment." />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ALERT BAR -->
+<div class="alert-bar">
+  <div class="container">
+    <span><span class="pulse"></span> CONTACT · UNCLASSIFIED CHANNEL</span>
+    <span class="stat-line">RESPONSE WINDOW · <strong>≤ 48 HRS</strong></span>
+    <span data-clock>—</span>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-mark">S</span>
+      <div class="brand-stack">
+        <span>SENTINEL</span>
+        <span class="sub">DEFENSE SYSTEMS</span>
+      </div>
+    </a>
+    <button class="nav-toggle" aria-label="Menu">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="systems.html">Systems</a></li>
+      <li><a href="capabilities.html">Capabilities</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+      <li><a href="contact.html" class="nav-cta">Request Brief</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<header class="hero" style="padding:90px 0 40px;">
+  <div class="container">
+    <div class="section-head reveal" style="margin-bottom:0;">
+      <span class="eyebrow">Get in Touch</span>
+      <h1 class="section-title" style="font-size:clamp(2.2rem,4.6vw,3.4rem);">Open a channel</h1>
+      <p class="section-intro">Tell us about your program. We'll align platform mix, integration timeline, and sustainment model — and respond within two business days.</p>
+    </div>
+  </div>
+</header>
+
+<!-- CONTACT -->
+<section style="padding-top:30px;">
+  <div class="container contact-grid">
+
+    <!-- Info -->
+    <div class="contact-info reveal">
+      <h2 class="section-title" style="font-size:1.6rem;">Talk to the team</h2>
+      <p class="section-intro" style="margin-bottom:10px;">Program offices, allied procurement, sustainment — reach the right desk directly.</p>
+      <div class="info-item">
+        <div class="info-ico">📧</div>
+        <div>
+          <div class="it-title">Programs</div>
+          <div class="it-sub">programs@sentinel-defense.com</div>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="info-ico">🌐</div>
+        <div>
+          <div class="it-title">Allied Procurement</div>
+          <div class="it-sub">allied@sentinel-defense.com</div>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="info-ico">📞</div>
+        <div>
+          <div class="it-title">Sustainment Hotline</div>
+          <div class="it-sub">+1 (703) 555-0142 · 24/7</div>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="info-ico">📍</div>
+        <div>
+          <div class="it-title">Headquarters</div>
+          <div class="it-sub">2100 Defense Park Drive · Arlington, VA 22202</div>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="info-ico">🛠️</div>
+        <div>
+          <div class="it-title">Field Operations</div>
+          <div class="it-sub">Huntsville, AL · Fort Bliss, TX · Stuttgart, DE</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Form -->
+    <form class="form reveal" novalidate>
+      <div class="form-row">
+        <div class="field">
+          <label for="name">Full name</label>
+          <input type="text" id="name" name="name" placeholder="LTC J. Avery" required />
+        </div>
+        <div class="field">
+          <label for="org">Organization</label>
+          <input type="text" id="org" name="org" placeholder="Program Office / Service / Agency" required />
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="field">
+          <label for="email">Work email</label>
+          <input type="email" id="email" name="email" placeholder="name@mail.mil / .gov" required />
+        </div>
+        <div class="field">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" placeholder="+1 (___) ___-____" />
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="field">
+          <label for="country">Country / Service</label>
+          <input type="text" id="country" name="country" placeholder="USA · UK · CAN · AUS · NZL" />
+        </div>
+        <div class="field">
+          <label for="interest">Inquiry</label>
+          <select id="interest" name="interest">
+            <option>TALON-9 — UGV</option>
+            <option>RAVEN-S — ISR drone</option>
+            <option>MULE-44 — Logistics</option>
+            <option>SAPPER-3 — EOD</option>
+            <option>Fleet procurement (multi-platform)</option>
+            <option>Sustainment &amp; training</option>
+            <option>Partnership / integrator</option>
+          </select>
+        </div>
+      </div>
+      <div class="field">
+        <label for="message">Program detail (unclassified only)</label>
+        <textarea id="message" name="message" placeholder="Describe mission set, expected operating environment, and timeline. Do not include classified information."></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary" style="width:100%;">Submit Inquiry</button>
+      <div class="form-note">✓ INQUIRY LOGGED · A SENTINEL PROGRAM LEAD WILL RESPOND WITHIN 48 HOURS</div>
+      <div class="itar-notice">
+        <strong style="color:var(--amber);">EXPORT NOTICE:</strong> SENTINEL systems are subject to U.S. export controls under ITAR. Information shared via this form must not be classified. International inquiries are routed through our allied procurement team and require an approved license prior to any transfer of technical data.
+      </div>
+    </form>
+
+  </div>
+</section>
+
+<!-- FAQ -->
+<section style="background:var(--bg-2);">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Before you ask</span>
+      <h2 class="section-title">Quick answers</h2>
+    </div>
+    <div style="max-width:780px;margin:0 auto;">
+      <div class="faq-item reveal">
+        <div class="faq-q">What happens after I submit an inquiry? <span class="plus">+</span></div>
+        <div class="faq-a">A SENTINEL program lead reviews your inquiry, confirms compliance fit, and reaches out within two business days to schedule a closed brief and prepare a tailored proposal.</div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-q">Do you support FMS (Foreign Military Sales)? <span class="plus">+</span></div>
+        <div class="faq-a">Yes. Our allied procurement team works with DSCA and partner-nation procurement offices throughout the FMS process, and we also support direct commercial sales where an approved license is in place.</div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-q">Can SENTINEL accommodate classified discussions? <span class="plus">+</span></div>
+        <div class="faq-a">Yes. We hold facility clearance and can host classified discussions at our Arlington and Huntsville locations, or travel to your program office's secure environment.</div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-q">Are demonstrations available? <span class="plus">+</span></div>
+        <div class="faq-a">Yes. We run live capability demonstrations at our Fort Bliss test range monthly, and conduct user-jury evaluations with operating units worldwide on request.</div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-q">Which contracting vehicles are available? <span class="plus">+</span></div>
+        <div class="faq-a">SENTINEL is on GSA Schedule, SEWP V, and several IDIQ vehicles. We also support OTA agreements through xTechSearch, DIU, and AFWERX channels.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="logo">
+          <span class="logo-mark">S</span>
+          <div class="brand-stack">
+            <span>SENTINEL</span>
+            <span class="sub">DEFENSE SYSTEMS</span>
+          </div>
+        </a>
+        <p class="tag">Unmanned ground, air, and logistics systems — designed and fielded for allied defense forces.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="systems.html">Systems</a></li>
+          <li><a href="capabilities.html">Capabilities</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="contact.html">Careers</a></li>
+          <li><a href="contact.html">Press</a></li>
+          <li><a href="contact.html">Sustainment</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Compliance</h4>
+        <ul>
+          <li><a href="contact.html">ITAR</a></li>
+          <li><a href="contact.html">CMMC 2.0</a></li>
+          <li><a href="contact.html">DFARS</a></li>
+          <li><a href="contact.html">NDAA §848</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> SENTINEL DEFENSE SYSTEMS · ALL RIGHTS RESERVED</span>
+      <span>EXPORT CONTROLLED · ITAR JURISDICTION</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
