@@ -14,7 +14,7 @@
 <link rel="apple-touch-icon" href="assets/favicon.png" />
 <link rel="stylesheet" href="style.css" />
 
-<!-- Open Graph (Telegram, LinkedIn, WhatsApp link previews) -->
+<!-- Open Graph -->
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://irobotics.uz/" />
 <meta property="og:site_name" content="Intellectual Robotics" />
@@ -22,8 +22,8 @@
 <meta property="og:description" content="Autonomous ground platforms, smart IoT control systems, and robotics engineering in Uzbekistan." />
 <meta property="og:image" content="https://irobotics.uz/assets/logo-dark.png" />
 
-<!-- Organization Structured Data for Google Search -->
- <meta name="google-site-verification" content="H_Dh1ojMZ9bVuyw36K4FxcfKA67ukcJG_e9ryfA-Ou4" />
+<!-- Google Verification & Structured Data -->
+<meta name="google-site-verification" content="H_Dh1ojMZ9bVuyw36K4FxcfKA67ukcJG_e9ryfA-Ou4" />
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -41,8 +41,8 @@
 </script>
 </head>
 <body>
-  
-<!-- Alert Bar -->
+
+<!-- ALERT BAR -->
 <div class="alert-bar">
   <div class="container">
     <span><span class="pulse"></span> <span data-i18n="alert_status">OPERATIONAL · ALL SYSTEMS NOMINAL</span></span>
@@ -58,17 +58,17 @@
       <img src="assets/logo-dark.png" alt="Intellectual Robotics" class="logo-img" width="901" height="160" />
     </a>
     <div class="lang-switch" aria-label="Language selector">
-      <a href="#uz" class="lang-btn" data-lang="uz">UZ</a>
-      <a href="#ru" class="lang-btn" data-lang="ru">RU</a>
-      <a href="#en" class="lang-btn active" data-lang="en">EN</a>
+      <button class="lang-btn" data-lang="uz">UZ</button>
+      <button class="lang-btn" data-lang="ru">RU</button>
+      <button class="lang-btn active" data-lang="en">EN</button>
     </div>
     <button class="nav-toggle" aria-label="Menu">☰</button>
     <ul class="nav-links">
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="systems.html">Systems</a></li>
-      <li><a href="capabilities.html">Capabilities</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="contact.html" class="nav-cta">Request Brief</a></li>
+      <li><a href="index.html" class="active" data-i18n="nav_home">Home</a></li>
+      <li><a href="systems.html" data-i18n="nav_systems">Systems</a></li>
+      <li><a href="capabilities.html" data-i18n="nav_capabilities">Capabilities</a></li>
+      <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
+      <li><a href="contact.html" class="nav-cta" data-i18n="nav_cta">Request Brief</a></li>
     </ul>
   </div>
 </nav>
@@ -77,25 +77,25 @@
 <header class="hero">
   <div class="container hero-grid">
     <div class="hero-copy">
-      <span class="hero-badge"><span class="dot"></span> Intellectual Robotics · TALON-9 Block II</span>
-      <h1>Autonomous &amp; IoT systems for the <span class="accent">modern force</span></h1>
-      <p class="lead">Intellectual Robotics (iRobotics.uz) designs and fields autonomous ground, aerial, IoT telemetry, and logistics platforms purpose-built to keep operators out of harm's way and decisions ahead of the challenge.</p>
+      <span class="hero-badge"><span class="dot"></span> <span data-i18n="hero_badge">Intellectual Robotics · TALON-9 Block II</span></span>
+      <h1 data-i18n="hero_title">Autonomous &amp; IoT systems for the <span class="accent">modern force</span></h1>
+      <p class="lead" data-i18n="hero_lead">Intellectual Robotics (iRobotics.uz) designs and fields autonomous ground, aerial, IoT telemetry, and logistics platforms purpose-built to keep operators out of harm's way and decisions ahead of the challenge.</p>
       <div class="hero-actions">
-        <a href="systems.html" class="btn btn-primary">View Systems</a>
-        <a href="capabilities.html" class="btn btn-ghost">Capabilities Brief</a>
+        <a href="systems.html" class="btn btn-primary" data-i18n="btn_systems">View Systems</a>
+        <a href="capabilities.html" class="btn btn-ghost" data-i18n="btn_capabilities">Capabilities Brief</a>
       </div>
       <div class="hero-stats">
         <div class="stat">
           <div class="num"><span data-count="2.1" data-suffix="K+">0</span></div>
-          <div class="label">Units fielded</div>
+          <div class="label" data-i18n="stat_units">Units fielded</div>
         </div>
         <div class="stat">
           <div class="num"><span data-count="18" data-suffix="">0</span></div>
-          <div class="label">Partner deployments</div>
+          <div class="label" data-i18n="stat_partners">Partner deployments</div>
         </div>
         <div class="stat">
           <div class="num"><span data-count="99.6" data-suffix="%">0</span></div>
-          <div class="label">Mission readiness</div>
+          <div class="label" data-i18n="stat_readiness">Mission readiness</div>
         </div>
       </div>
     </div>
@@ -117,34 +117,34 @@
 <section id="about">
   <div class="container about-grid">
     <div class="about-text reveal">
-      <span class="eyebrow">About Intellectual Robotics</span>
-      <h2 class="section-title">Built for the operators who use it</h2>
-      <p class="section-intro">Founded by engineers and roboticists in Uzbekistan, Intellectual Robotics (iRobotics) delivers unmanned and IoT systems built for real-world field conditions. We design every platform in-house — chassis, perception, real-time telemetry, autonomy, and sustainment.</p>
-      <h3>Mission</h3>
-      <p>Keep people out of hazardous environments by giving them intelligent machines they can trust to go in first — for reconnaissance, IoT monitoring, logistics, security, and recovery.</p>
-      <h3>Principles</h3>
-      <p>Human-on-the-loop. Built to standard. Sustainable in the field. Every system we ship is operator-tested and engineered for reliable deployment.</p>
+      <span class="eyebrow" data-i18n="about_eyebrow">About Intellectual Robotics</span>
+      <h2 class="section-title" data-i18n="about_title">Built for the operators who use it</h2>
+      <p class="section-intro" data-i18n="about_intro">Founded by engineers and roboticists in Uzbekistan, Intellectual Robotics (iRobotics) delivers unmanned and IoT systems built for real-world field conditions. We design every platform in-house — chassis, perception, real-time telemetry, autonomy, and sustainment.</p>
+      <h3 data-i18n="mission_title">Mission</h3>
+      <p data-i18n="mission_desc">Keep people out of hazardous environments by giving them intelligent machines they can trust to go in first — for reconnaissance, IoT monitoring, logistics, security, and recovery.</p>
+      <h3 data-i18n="principles_title">Principles</h3>
+      <p data-i18n="principles_desc">Human-on-the-loop. Built to standard. Sustainable in the field. Every system we ship is operator-tested and engineered for reliable deployment.</p>
     </div>
     <div class="about-visual reveal">
       <div class="about-cell">
         <div class="ico">🧭</div>
-        <div class="t">Autonomous</div>
-        <div class="d">GPS-denied</div>
+        <div class="t" data-i18n="cell1_title">Autonomous</div>
+        <div class="d" data-i18n="cell1_sub">GPS-denied</div>
       </div>
       <div class="about-cell">
         <div class="ico">📡</div>
-        <div class="t">Resilient Comms</div>
-        <div class="d">Mesh + IoT MQTT</div>
+        <div class="t" data-i18n="cell2_title">Resilient Comms</div>
+        <div class="d" data-i18n="cell2_sub">Mesh + IoT MQTT</div>
       </div>
       <div class="about-cell">
         <div class="ico">🛡️</div>
-        <div class="t">Hardened</div>
-        <div class="d">MIL-STD-810</div>
+        <div class="t" data-i18n="cell3_title">Hardened</div>
+        <div class="d" data-i18n="cell3_sub">MIL-STD-810</div>
       </div>
       <div class="about-cell">
         <div class="ico">🇺🇿</div>
-        <div class="t">Tashkent R&amp;D</div>
-        <div class="d">In-House Built</div>
+        <div class="t" data-i18n="cell4_title">Tashkent R&amp;D</div>
+        <div class="d" data-i18n="cell4_sub">In-House Built</div>
       </div>
     </div>
   </div>
@@ -154,40 +154,40 @@
 <section id="why" style="background:var(--bg-2);">
   <div class="container">
     <div class="section-head center reveal">
-      <span class="eyebrow">Why Intellectual Robotics</span>
-      <h2 class="section-title">Field-ready out of the crate</h2>
-      <p class="section-intro">Every platform ships sustainment-ready. No bespoke integrators, no months-long activation.</p>
+      <span class="eyebrow" data-i18n="why_eyebrow">Why Intellectual Robotics</span>
+      <h2 class="section-title" data-i18n="why_title">Field-ready out of the crate</h2>
+      <p class="section-intro" data-i18n="why_intro">Every platform ships sustainment-ready. No bespoke integrators, no months-long activation.</p>
     </div>
     <div class="grid grid-3">
       <div class="card reveal">
         <div class="ico">🚀</div>
-        <h3>Rapid Deployment</h3>
-        <p>Crate to operational in under an hour. Two-person setup, no specialized tooling required in the field.</p>
+        <h3 data-i18n="card1_title">Rapid Deployment</h3>
+        <p data-i18n="card1_desc">Crate to operational in under an hour. Two-person setup, no specialized tooling required in the field.</p>
       </div>
       <div class="card reveal">
         <div class="ico">🧩</div>
-        <h3>Modular Payloads</h3>
-        <p>Swap sensor heads, comms packages, and cargo modules for the mission at hand — minutes, not hours.</p>
+        <h3 data-i18n="card2_title">Modular Payloads</h3>
+        <p data-i18n="card2_desc">Swap sensor heads, comms packages, and cargo modules for the mission at hand — minutes, not hours.</p>
       </div>
       <div class="card reveal">
         <div class="ico">🛰️</div>
-        <h3>GPS-Denied Autonomy</h3>
-        <p>Visual-inertial navigation and onboard mapping keep platforms on mission when satellites can't help.</p>
+        <h3 data-i18n="card3_title">GPS-Denied Autonomy</h3>
+        <p data-i18n="card3_desc">Visual-inertial navigation and onboard mapping keep platforms on mission when satellites can't help.</p>
       </div>
       <div class="card reveal">
         <div class="ico">📡</div>
-        <h3>Resilient Mesh &amp; IoT</h3>
-        <p>Low-latency telemetry and self-healing mesh links keep the fleet connected across contested environments.</p>
+        <h3 data-i18n="card4_title">Resilient Mesh &amp; IoT</h3>
+        <p data-i18n="card4_desc">Low-latency telemetry and self-healing mesh links keep the fleet connected across contested environments.</p>
       </div>
       <div class="card reveal">
         <div class="ico">⚙️</div>
-        <h3>Operator-Sustainable</h3>
-        <p>Field-replaceable units, common toolkit, and predictive diagnostics — repair at the squad level.</p>
+        <h3 data-i18n="card5_title">Operator-Sustainable</h3>
+        <p data-i18n="card5_desc">Field-replaceable units, common toolkit, and predictive diagnostics — repair at the squad level.</p>
       </div>
       <div class="card reveal">
         <div class="ico">🤝</div>
-        <h3>Human-on-the-Loop</h3>
-        <p>Operators retain authority over every consequential action. Autonomy assists; people decide.</p>
+        <h3 data-i18n="card6_title">Human-on-the-Loop</h3>
+        <p data-i18n="card6_desc">Operators retain authority over every consequential action. Autonomy assists; people decide.</p>
       </div>
     </div>
   </div>
@@ -197,9 +197,9 @@
 <section id="cta">
   <div class="container">
     <div class="cta-strip reveal">
-      <h2>Schedule a capability brief</h2>
-      <p>Our team will walk through Intellectual Robotics platforms, integration timeline, and sustainment model with your organization.</p>
-      <a href="contact.html" class="btn btn-primary">Request a Brief</a>
+      <h2 data-i18n="cta_title">Schedule a capability brief</h2>
+      <p data-i18n="cta_desc">Our team will walk through Intellectual Robotics platforms, integration timeline, and sustainment model with your organization.</p>
+      <a href="contact.html" class="btn btn-primary" data-i18n="cta_btn">Request a Brief</a>
     </div>
   </div>
 </section>
@@ -212,39 +212,39 @@
         <a href="index.html" class="logo" aria-label="Intellectual Robotics — home">
           <img src="assets/logo-dark.png" alt="Intellectual Robotics" class="logo-img" width="901" height="160" />
         </a>
-        <p class="tag">Unmanned ground, air, IoT, and logistics systems — engineered by Intellectual Robotics (iRobotics.uz).</p>
+        <p class="tag" data-i18n="footer_tag">Unmanned ground, air, IoT, and logistics systems — engineered by Intellectual Robotics (iRobotics.uz).</p>
       </div>
       <div>
-        <h4>Explore</h4>
+        <h4 data-i18n="footer_explore">Explore</h4>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="systems.html">Systems</a></li>
-          <li><a href="capabilities.html">Capabilities</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+          <li><a href="systems.html" data-i18n="nav_systems">Systems</a></li>
+          <li><a href="capabilities.html" data-i18n="nav_capabilities">Capabilities</a></li>
+          <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
         </ul>
       </div>
       <div>
-        <h4>Company</h4>
+        <h4 data-i18n="footer_company">Company</h4>
         <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="contact.html">Careers</a></li>
-          <li><a href="contact.html">Press</a></li>
-          <li><a href="contact.html">Sustainment</a></li>
+          <li><a href="#about" data-i18n="about_eyebrow">About</a></li>
+          <li><a href="contact.html" data-i18n="footer_careers">Careers</a></li>
+          <li><a href="contact.html" data-i18n="footer_press">Press</a></li>
+          <li><a href="contact.html" data-i18n="footer_sustainment">Sustainment</a></li>
         </ul>
       </div>
       <div>
-        <h4>Standards</h4>
+        <h4 data-i18n="footer_standards">Standards</h4>
         <ul>
-          <li><a href="capabilities.html">Autonomy Stack</a></li>
-          <li><a href="capabilities.html">IoT Telemetry</a></li>
-          <li><a href="capabilities.html">MIL-STD-810H</a></li>
-          <li><a href="contact.html">Support</a></li>
+          <li><a href="capabilities.html" data-i18n="std_autonomy">Autonomy Stack</a></li>
+          <li><a href="capabilities.html" data-i18n="std_iot">IoT Telemetry</a></li>
+          <li><a href="capabilities.html" data-i18n="std_mil">MIL-STD-810H</a></li>
+          <li><a href="contact.html" data-i18n="std_support">Support</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
       <span>© <span data-year>2026</span> INTELLECTUAL ROBOTICS (IROBOTICS.UZ) · ALL RIGHTS RESERVED</span>
-      <span>TASHKENT, UZBEKISTAN</span>
+      <span data-i18n="footer_location">TASHKENT, UZBEKISTAN</span>
     </div>
   </div>
 </footer>
