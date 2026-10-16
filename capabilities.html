@@ -15,8 +15,8 @@
 <!-- ALERT BAR -->
 <div class="alert-bar">
   <div class="container">
-    <span><span class="pulse"></span> CAPABILITIES BRIEF · UNCLASSIFIED</span>
-    <span class="stat-line">PERCEPTION · AUTONOMY · COMMS · SAFETY</span>
+    <span><span class="pulse"></span> <span data-i18n="cap_alert">CAPABILITIES BRIEF · UNCLASSIFIED</span></span>
+    <span class="stat-line" data-i18n="cap_statline">PERCEPTION · AUTONOMY · COMMS · SAFETY</span>
     <span data-clock>—</span>
   </div>
 </div>
@@ -27,13 +27,18 @@
     <a href="index.html" class="logo" aria-label="Intellectual Robotics — home">
       <img src="assets/logo-dark.png" alt="Intellectual Robotics" class="logo-img" width="901" height="160" />
     </a>
+    <div class="lang-switch" aria-label="Language selector">
+      <button class="lang-btn" data-lang="uz">UZ</button>
+      <button class="lang-btn" data-lang="ru">RU</button>
+      <button class="lang-btn active" data-lang="en">EN</button>
+    </div>
     <button class="nav-toggle" aria-label="Menu">☰</button>
     <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="systems.html">Systems</a></li>
-      <li><a href="capabilities.html" class="active">Capabilities</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="contact.html" class="nav-cta">Request Brief</a></li>
+      <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+      <li><a href="systems.html" data-i18n="nav_systems">Systems</a></li>
+      <li><a href="capabilities.html" class="active" data-i18n="nav_capabilities">Capabilities</a></li>
+      <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
+      <li><a href="contact.html" class="nav-cta" data-i18n="nav_cta">Request Brief</a></li>
     </ul>
   </div>
 </nav>
@@ -42,15 +47,15 @@
 <header class="hero" style="padding:90px 0 40px;">
   <div class="container">
     <div class="section-head reveal" style="margin-bottom:0;">
-      <span class="eyebrow">The Stack</span>
-      <h1 class="section-title" style="font-size:clamp(2.2rem,4.6vw,3.4rem);">An autonomy stack designed for contested environments</h1>
-      <p class="section-intro">Perception, intelligence, and motion engineered together — and proven against the conditions field operators actually face.</p>
+      <span class="eyebrow" data-i18n="stack_eyebrow">The Stack</span>
+      <h1 class="section-title" style="font-size:clamp(2.2rem,4.6vw,3.4rem);" data-i18n="stack_title">An autonomy stack designed for contested environments</h1>
+      <p class="section-intro" data-i18n="stack_intro">Perception, intelligence, and motion engineered together — and proven against the conditions field operators actually face.</p>
     </div>
     <div class="metric-bar">
-      <div class="metric reveal"><div class="big"><span data-count="20" data-suffix="ms">0</span></div><div class="cap">Decision latency</div></div>
-      <div class="metric reveal"><div class="big"><span data-count="360" data-suffix="°">0</span></div><div class="cap">Sensor coverage</div></div>
-      <div class="metric reveal"><div class="big"><span data-count="99.4" data-suffix="%">0</span></div><div class="cap">Task accuracy</div></div>
-      <div class="metric reveal"><div class="big">GPS<span style="font-size:1.2rem;">-DENIED</span></div><div class="cap">Navigation capable</div></div>
+      <div class="metric reveal"><div class="big"><span data-count="20" data-suffix="ms">0</span></div><div class="cap" data-i18n="metric1_cap">Decision latency</div></div>
+      <div class="metric reveal"><div class="big"><span data-count="360" data-suffix="°">0</span></div><div class="cap" data-i18n="metric2_cap">Sensor coverage</div></div>
+      <div class="metric reveal"><div class="big"><span data-count="99.4" data-suffix="%">0</span></div><div class="cap" data-i18n="metric3_cap">Task accuracy</div></div>
+      <div class="metric reveal"><div class="big">GPS<span style="font-size:1.2rem;">-DENIED</span></div><div class="cap" data-i18n="metric4_cap">Navigation capable</div></div>
     </div>
   </div>
 </header>
@@ -61,14 +66,14 @@
 
     <div class="spec-row reveal">
       <div class="spec-text">
-        <span class="eyebrow">Perception</span>
-        <h3>Full situational awareness, day or night</h3>
-        <p>A fused sensor suite builds a live 3D model of the environment thirty times a second — accurate to the centimeter in rain, dust, and low light.</p>
+        <span class="eyebrow" data-i18n="percep_eyebrow">Perception</span>
+        <h3 data-i18n="percep_title">Full situational awareness, day or night</h3>
+        <p data-i18n="percep_desc">A fused sensor suite builds a live 3D model of the environment thirty times a second — accurate to the centimeter in rain, dust, and low light.</p>
         <ul class="spec-list">
-          <li>Solid-state LiDAR with 200 m effective range</li>
-          <li>Multi-spectral EO/IR — visible, near-IR, and thermal</li>
-          <li>Sensor fusion robust to dust, rain, and obscurants</li>
-          <li>Onboard object classification trained on operator-collected data</li>
+          <li data-i18n="percep_li1">Solid-state LiDAR with 200 m effective range</li>
+          <li data-i18n="percep_li2">Multi-spectral EO/IR — visible, near-IR, and thermal</li>
+          <li data-i18n="percep_li3">Sensor fusion robust to dust, rain, and obscurants</li>
+          <li data-i18n="percep_li4">Onboard object classification trained on operator-collected data</li>
         </ul>
       </div>
       <div class="spec-visual"><span class="frame-corners"></span>👁️</div>
@@ -76,14 +81,14 @@
 
     <div class="spec-row reverse reveal">
       <div class="spec-text">
-        <span class="eyebrow">Autonomy</span>
-        <h3>Navigates and plans without external signals</h3>
-        <p>Visual-inertial odometry, terrain-relative navigation, and on-platform mission planning keep platforms operational when GNSS is jammed, spoofed, or unavailable.</p>
+        <span class="eyebrow" data-i18n="autonomy_eyebrow">Autonomy</span>
+        <h3 data-i18n="autonomy_title">Navigates and plans without external signals</h3>
+        <p data-i18n="autonomy_desc">Visual-inertial odometry, terrain-relative navigation, and on-platform mission planning keep platforms operational when GNSS is jammed, spoofed, or unavailable.</p>
         <ul class="spec-list">
-          <li>GPS-denied navigation with sub-meter drift over 10 km</li>
-          <li>275 TOPS of neural compute on board — fully disconnected operation</li>
-          <li>Terrain reasoning for slopes, ditches, and overhead clearance</li>
-          <li>Behavior trees designed and reviewed with end-users</li>
+          <li data-i18n="autonomy_li1">GPS-denied navigation with sub-meter drift over 10 km</li>
+          <li data-i18n="autonomy_li2">275 TOPS of neural compute on board — fully disconnected operation</li>
+          <li data-i18n="autonomy_li3">Terrain reasoning for slopes, ditches, and overhead clearance</li>
+          <li data-i18n="autonomy_li4">Behavior trees designed and reviewed with end-users</li>
         </ul>
       </div>
       <div class="spec-visual"><span class="frame-corners"></span>🧠</div>
@@ -91,14 +96,14 @@
 
     <div class="spec-row reveal">
       <div class="spec-text">
-        <span class="eyebrow">Communications</span>
-        <h3>Resilient links in contested spectrum</h3>
-        <p>Anti-jam waveforms and self-healing mesh keep distributed fleets connected when adversary EW is active — without depending on commercial infrastructure.</p>
+        <span class="eyebrow" data-i18n="comms_eyebrow">Communications</span>
+        <h3 data-i18n="comms_title">Resilient links in contested spectrum</h3>
+        <p data-i18n="comms_desc">Anti-jam waveforms and self-healing mesh keep distributed fleets connected when adversary EW is active — without depending on commercial infrastructure.</p>
         <ul class="spec-list">
-          <li>Frequency-hopping mesh with adaptive bandwidth</li>
-          <li>Optional SATCOM backhaul for beyond-line-of-sight operation</li>
-          <li>End-to-end encrypted command and telemetry</li>
-          <li>Graceful degradation — return-to-base on link loss</li>
+          <li data-i18n="comms_li1">Frequency-hopping mesh with adaptive bandwidth</li>
+          <li data-i18n="comms_li2">Optional SATCOM backhaul for beyond-line-of-sight operation</li>
+          <li data-i18n="comms_li3">End-to-end encrypted command and telemetry</li>
+          <li data-i18n="comms_li4">Graceful degradation — return-to-base on link loss</li>
         </ul>
       </div>
       <div class="spec-visual"><span class="frame-corners"></span>📡</div>
@@ -106,14 +111,14 @@
 
     <div class="spec-row reverse reveal">
       <div class="spec-text">
-        <span class="eyebrow">Safety &amp; Authority</span>
-        <h3>Human-on-the-loop, every consequential action</h3>
-        <p>Intellectual Robotics platforms assist the operator — they do not replace the operator's judgment. Authority controls and safety interlocks are independent, redundant, and auditable.</p>
+        <span class="eyebrow" data-i18n="safety_eyebrow">Safety &amp; Authority</span>
+        <h3 data-i18n="safety_title">Human-on-the-loop, every consequential action</h3>
+        <p data-i18n="safety_desc">Intellectual Robotics platforms assist the operator — they do not replace the operator's judgment. Authority controls and safety interlocks are independent, redundant, and auditable.</p>
         <ul class="spec-list">
-          <li>Operator authority required for every kinetic or consequential action</li>
-          <li>Redundant emergency stops, hardware and software</li>
-          <li>Geo-fencing, no-go zones, and per-area speed limits</li>
-          <li>Full mission log retained for after-action review</li>
+          <li data-i18n="safety_li1">Operator authority required for every consequential action</li>
+          <li data-i18n="safety_li2">Redundant emergency stops, hardware and software</li>
+          <li data-i18n="safety_li3">Geo-fencing, no-go zones, and per-area speed limits</li>
+          <li data-i18n="safety_li4">Full mission log retained for after-action review</li>
         </ul>
       </div>
       <div class="spec-visual"><span class="frame-corners"></span>🛡️</div>
@@ -126,40 +131,40 @@
 <section style="background:var(--bg-2);">
   <div class="container">
     <div class="section-head center reveal">
-      <span class="eyebrow">Intellectual Robotics OS</span>
-      <h2 class="section-title">One software baseline across the fleet</h2>
-      <p class="section-intro">Common interfaces, common training, common sustainment — across every Intellectual Robotics platform.</p>
+      <span class="eyebrow" data-i18n="os_eyebrow">Intellectual Robotics OS</span>
+      <h2 class="section-title" data-i18n="os_title">One software baseline across the fleet</h2>
+      <p class="section-intro" data-i18n="os_intro">Common interfaces, common training, common sustainment — across every Intellectual Robotics platform.</p>
     </div>
     <div class="grid grid-3">
       <div class="card reveal">
         <div class="ico">🗺️</div>
-        <h3>Live Mapping</h3>
-        <p>Platforms share what they see — building and updating a fleet-wide common operating picture.</p>
+        <h3 data-i18n="os_c1_title">Live Mapping</h3>
+        <p data-i18n="os_c1_desc">Platforms share what they see — building and updating a fleet-wide common operating picture.</p>
       </div>
       <div class="card reveal">
         <div class="ico">🔄</div>
-        <h3>OTA Updates</h3>
-        <p>Capability releases push to the whole fleet on the operator's schedule, with signed and verifiable firmware.</p>
+        <h3 data-i18n="os_c2_title">OTA Updates</h3>
+        <p data-i18n="os_c2_desc">Capability releases push to the whole fleet on the operator's schedule, with signed and verifiable firmware.</p>
       </div>
       <div class="card reveal">
         <div class="ico">🔐</div>
-        <h3>Secure by Default</h3>
-        <p>FIPS-validated cryptography, signed firmware, and role-based access aligned to CMMC 2.0 controls.</p>
+        <h3 data-i18n="os_c3_title">Secure by Default</h3>
+        <p data-i18n="os_c3_desc">FIPS-validated cryptography, signed firmware, and role-based access controls.</p>
       </div>
       <div class="card reveal">
         <div class="ico">🧩</div>
-        <h3>Open API</h3>
-        <p>Integrate with C2 systems, FMV pipelines, and analyst tools through documented REST and STANAG interfaces.</p>
+        <h3 data-i18n="os_c4_title">Open API</h3>
+        <p data-i18n="os_c4_desc">Integrate with C2 systems, FMV pipelines, and analyst tools through documented REST interfaces.</p>
       </div>
       <div class="card reveal">
         <div class="ico">📈</div>
-        <h3>Mission Analytics</h3>
-        <p>Every mission logged and visualized — track readiness, sustainment burn-rate, and after-action insights.</p>
+        <h3 data-i18n="os_c5_title">Mission Analytics</h3>
+        <p data-i18n="os_c5_desc">Every mission logged and visualized — track readiness, sustainment burn-rate, and after-action insights.</p>
       </div>
       <div class="card reveal">
         <div class="ico">🤝</div>
-        <h3>Fleet Coordination</h3>
-        <p>Platforms negotiate routes and hand off tasking so a distributed force operates as a single team.</p>
+        <h3 data-i18n="os_c6_title">Fleet Coordination</h3>
+        <p data-i18n="os_c6_desc">Platforms negotiate routes and hand off tasking so a distributed force operates as a single team.</p>
       </div>
     </div>
   </div>
@@ -169,47 +174,15 @@
 <section>
   <div class="container">
     <div class="section-head center reveal">
-      <span class="eyebrow">Compliance</span>
-      <h2 class="section-title">Built to the standard, from the bill of materials up</h2>
-      <p class="section-intro">Intellectual Robotics platforms are designed for U.S. and allied procurement programs — supply chain, software, and security included.</p>
+      <span class="eyebrow" data-i18n="comp_eyebrow">Compliance</span>
+      <h2 class="section-title" data-i18n="comp_title">Built to the standard, from the bill of materials up</h2>
+      <p class="section-intro" data-i18n="comp_intro">Intellectual Robotics platforms are designed for international procurement programs — supply chain, software, and security included.</p>
     </div>
     <div class="grid grid-4">
-      <div class="card reveal"><div class="ico">📜</div><h3>NDAA §848</h3><p>Compliant component sourcing across the supply chain.</p></div>
-      <div class="card reveal"><div class="ico">🔒</div><h3>CMMC 2.0</h3><p>Cybersecurity controls aligned to Level 2 requirements.</p></div>
-      <div class="card reveal"><div class="ico">🌐</div><h3>ITAR / EAR</h3><p>Export-controlled and licensed for approved allied partners.</p></div>
-      <div class="card reveal"><div class="ico">🛡️</div><h3>MIL-STD-810H</h3><p>Environmental testing for shock, vibration, temperature, dust, and water.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- FAQ -->
-<section style="padding-top:0;">
-  <div class="container">
-    <div class="section-head center reveal">
-      <span class="eyebrow">Good to know</span>
-      <h2 class="section-title">Common questions</h2>
-    </div>
-    <div style="max-width:780px;margin:0 auto;">
-      <div class="faq-item reveal">
-        <div class="faq-q">Do Intellectual Robotics platforms operate autonomously without an operator? <span class="plus">+</span></div>
-        <div class="faq-a">Platforms execute navigation, mapping, and sensor tasks autonomously, but every consequential action — kinetic effects, payload release, or interaction with humans — requires explicit operator authority. We design for human-on-the-loop, not human-out-of-the-loop.</div>
-      </div>
-      <div class="faq-item reveal">
-        <div class="faq-q">Do the platforms work without GPS? <span class="plus">+</span></div>
-        <div class="faq-a">Yes. Visual-inertial odometry and terrain-relative navigation maintain sub-meter accuracy over kilometers in GNSS-denied environments. GPS is used when available but never required.</div>
-      </div>
-      <div class="faq-item reveal">
-        <div class="faq-q">How quickly can a unit be fielded? <span class="plus">+</span></div>
-        <div class="faq-a">Crate to operational in under an hour with a two-person team. Initial operator training is a two-day course; sustainment training is built into the platform itself.</div>
-      </div>
-      <div class="faq-item reveal">
-        <div class="faq-q">How does Intellectual Robotics handle export controls? <span class="plus">+</span></div>
-        <div class="faq-a">All Intellectual Robotics platforms are export controlled under ITAR. International sales require an approved license. We work with partner-nation procurement offices and FMS channels throughout the process.</div>
-      </div>
-      <div class="faq-item reveal">
-        <div class="faq-q">What sustainment is included? <span class="plus">+</span></div>
-        <div class="faq-a">Every unit ships with five years of spares, training, and 24/7 engineering support. Mean repair time is under two hours at the field level using line-replaceable units.</div>
-      </div>
+      <div class="card reveal"><div class="ico">📜</div><h3 data-i18n="comp_b1_title">Secure Supply</h3><p data-i18n="comp_b1_desc">Compliant component sourcing across the supply chain.</p></div>
+      <div class="card reveal"><div class="ico">🔒</div><h3 data-i18n="comp_b2_title">CMMC 2.0</h3><p data-i18n="comp_b2_desc">Cybersecurity controls aligned to robust standards.</p></div>
+      <div class="card reveal"><div class="ico">🌐</div><h3 data-i18n="comp_b3_title">Export Controls</h3><p data-i18n="comp_b3_desc">Regulated and licensed for approved international partners.</p></div>
+      <div class="card reveal"><div class="ico">🛡️</div><h3 data-i18n="comp_b4_title">MIL-STD-810H</h3><p data-i18n="comp_b4_desc">Environmental testing for shock, vibration, temperature, dust, and water.</p></div>
     </div>
   </div>
 </section>
@@ -218,9 +191,9 @@
 <section style="padding-top:0;">
   <div class="container">
     <div class="cta-strip reveal">
-      <h2>Brief the technical team</h2>
-      <p>Request a closed technical session with our engineering and program leads. We accommodate program-office secure environments.</p>
-      <a href="contact.html" class="btn btn-primary">Request Technical Brief</a>
+      <h2 data-i18n="tech_cta_title">Brief the technical team</h2>
+      <p data-i18n="tech_cta_desc">Request a closed technical session with our engineering and program leads.</p>
+      <a href="contact.html" class="btn btn-primary" data-i18n="tech_cta_btn">Request Technical Brief</a>
     </div>
   </div>
 </section>
@@ -233,39 +206,39 @@
         <a href="index.html" class="logo" aria-label="Intellectual Robotics — home">
           <img src="assets/logo-dark.png" alt="Intellectual Robotics" class="logo-img" width="901" height="160" />
         </a>
-        <p class="tag">Unmanned ground, air, and logistics systems — designed and fielded for allied defense forces.</p>
+        <p class="tag" data-i18n="footer_tag">Unmanned ground, air, IoT, and logistics systems — engineered by Intellectual Robotics (iRobotics.uz).</p>
       </div>
       <div>
-        <h4>Explore</h4>
+        <h4 data-i18n="footer_explore">Explore</h4>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="systems.html">Systems</a></li>
-          <li><a href="capabilities.html">Capabilities</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+          <li><a href="systems.html" data-i18n="nav_systems">Systems</a></li>
+          <li><a href="capabilities.html" data-i18n="nav_capabilities">Capabilities</a></li>
+          <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
         </ul>
       </div>
       <div>
-        <h4>Company</h4>
+        <h4 data-i18n="footer_company">Company</h4>
         <ul>
-          <li><a href="index.html#about">About</a></li>
-          <li><a href="contact.html">Careers</a></li>
-          <li><a href="contact.html">Press</a></li>
-          <li><a href="contact.html">Sustainment</a></li>
+          <li><a href="index.html#about" data-i18n="about_eyebrow">About</a></li>
+          <li><a href="contact.html" data-i18n="footer_careers">Careers</a></li>
+          <li><a href="contact.html" data-i18n="footer_press">Press</a></li>
+          <li><a href="contact.html" data-i18n="footer_sustainment">Sustainment</a></li>
         </ul>
       </div>
       <div>
-        <h4>Compliance</h4>
+        <h4 data-i18n="footer_standards">Standards</h4>
         <ul>
-          <li><a href="contact.html">ITAR</a></li>
-          <li><a href="contact.html">CMMC 2.0</a></li>
-          <li><a href="contact.html">DFARS</a></li>
-          <li><a href="contact.html">NDAA §848</a></li>
+          <li><a href="capabilities.html" data-i18n="std_autonomy">Autonomy Stack</a></li>
+          <li><a href="capabilities.html" data-i18n="std_iot">IoT Telemetry</a></li>
+          <li><a href="capabilities.html" data-i18n="std_mil">MIL-STD-810H</a></li>
+          <li><a href="contact.html" data-i18n="std_support">Support</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
       <span>© <span data-year>2026</span> INTELLECTUAL ROBOTICS (IROBOTICS.UZ) · ALL RIGHTS RESERVED</span>
-      <span>EXPORT CONTROLLED · ITAR JURISDICTION</span>
+      <span data-i18n="footer_location">TASHKENT, UZBEKISTAN</span>
     </div>
   </div>
 </footer>

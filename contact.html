@@ -15,8 +15,8 @@
 <!-- ALERT BAR -->
 <div class="alert-bar">
   <div class="container">
-    <span><span class="pulse"></span> CONTACT · UNCLASSIFIED CHANNEL</span>
-    <span class="stat-line">RESPONSE WINDOW · <strong>≤ 48 HRS</strong></span>
+    <span><span class="pulse"></span> <span data-i18n="contact_alert">CONTACT · UNCLASSIFIED CHANNEL</span></span>
+    <span class="stat-line"><span data-i18n="contact_response">RESPONSE WINDOW</span> · <strong>≤ 48 HRS</strong></span>
     <span data-clock>—</span>
   </div>
 </div>
@@ -27,13 +27,18 @@
     <a href="index.html" class="logo" aria-label="Intellectual Robotics — home">
       <img src="assets/logo-dark.png" alt="Intellectual Robotics" class="logo-img" width="901" height="160" />
     </a>
+    <div class="lang-switch" aria-label="Language selector">
+      <button class="lang-btn" data-lang="uz">UZ</button>
+      <button class="lang-btn" data-lang="ru">RU</button>
+      <button class="lang-btn active" data-lang="en">EN</button>
+    </div>
     <button class="nav-toggle" aria-label="Menu">☰</button>
     <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="systems.html">Systems</a></li>
-      <li><a href="capabilities.html">Capabilities</a></li>
-      <li><a href="contact.html" class="active">Contact</a></li>
-      <li><a href="contact.html" class="nav-cta">Request Brief</a></li>
+      <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+      <li><a href="systems.html" data-i18n="nav_systems">Systems</a></li>
+      <li><a href="capabilities.html" data-i18n="nav_capabilities">Capabilities</a></li>
+      <li><a href="contact.html" class="active" data-i18n="nav_contact">Contact</a></li>
+      <li><a href="contact.html" class="nav-cta" data-i18n="nav_cta">Request Brief</a></li>
     </ul>
   </div>
 </nav>
@@ -42,9 +47,9 @@
 <header class="hero" style="padding:90px 0 40px;">
   <div class="container">
     <div class="section-head reveal" style="margin-bottom:0;">
-      <span class="eyebrow">Get in Touch</span>
-      <h1 class="section-title" style="font-size:clamp(2.2rem,4.6vw,3.4rem);">Open a channel</h1>
-      <p class="section-intro">Tell us about your program. We'll align platform mix, integration timeline, and sustainment model — and respond within two business days.</p>
+      <span class="eyebrow" data-i18n="contact_eyebrow">Get in Touch</span>
+      <h1 class="section-title" style="font-size:clamp(2.2rem,4.6vw,3.4rem);" data-i18n="contact_title">Open a channel</h1>
+      <p class="section-intro" data-i18n="contact_intro">Tell us about your program. We'll align platform mix, integration timeline, and sustainment model — and respond within two business days.</p>
     </div>
   </div>
 </header>
@@ -55,74 +60,74 @@
 
     <!-- Info -->
     <div class="contact-info reveal">
-      <h2 class="section-title" style="font-size:1.6rem;">Talk to the team</h2>
-      <p class="section-intro" style="margin-bottom:10px;">Program offices, allied procurement, sustainment — reach the right desk directly.</p>
+      <h2 class="section-title" style="font-size:1.6rem;" data-i18n="team_title">Talk to the team</h2>
+      <p class="section-intro" style="margin-bottom:10px;" data-i18n="team_intro">Program offices, allied procurement, sustainment — reach the right desk directly.</p>
       <div class="info-item">
         <div class="info-ico">📧</div>
         <div>
-          <div class="it-title">Programs</div>
+          <div class="it-title" data-i18n="desk_programs">Programs</div>
           <div class="it-sub">programs@irobotics.uz</div>
         </div>
       </div>
       <div class="info-item">
         <div class="info-ico">🌐</div>
         <div>
-          <div class="it-title">Allied Procurement</div>
+          <div class="it-title" data-i18n="desk_procurement">Allied Procurement</div>
           <div class="it-sub">allied@irobotics.uz</div>
         </div>
       </div>
       <div class="info-item">
         <div class="info-ico">📞</div>
         <div>
-          <div class="it-title">Sustainment Hotline</div>
-          <div class="it-sub">+1 (703) 555-0142 · 24/7</div>
+          <div class="it-title" data-i18n="desk_hotline">Sustainment Hotline</div>
+          <div class="it-sub">+998 (71) 555-0142 · 24/7</div>
         </div>
       </div>
       <div class="info-item">
         <div class="info-ico">📍</div>
         <div>
-          <div class="it-title">Headquarters</div>
-          <div class="it-sub">Tashkent, Uzbekistan</div>
+          <div class="it-title" data-i18n="desk_hq">Headquarters</div>
+          <div class="it-sub" data-i18n="hq_address">Tashkent, Uzbekistan</div>
         </div>
       </div>
       <div class="info-item">
         <div class="info-ico">🛠️</div>
         <div>
-          <div class="it-title">Field Operations</div>
+          <div class="it-title" data-i18n="desk_ops">Field Operations</div>
           <div class="it-sub">Tashkent · Samarkand · Navoi, UZ</div>
         </div>
       </div>
     </div>
 
     <!-- Form -->
-    <form class="form reveal" novalidate>
+    <form class="form reveal" name="contact" method="POST" data-netlify="true" novalidate>
       <div class="form-row">
         <div class="field">
-          <label for="name">Full name</label>
-          <input type="text" id="name" name="name" placeholder="LTC J. Avery" required />
+          <label for="name" data-i18n="form_name">Full name</label>
+          <input type="text" id="name" name="name" placeholder="J. Avery" required />
         </div>
         <div class="field">
-          <label for="org">Organization</label>
+          <label for="org" data-i18n="form_org">Organization</label>
           <input type="text" id="org" name="org" placeholder="Program Office / Service / Agency" required />
         </div>
       </div>
       <div class="form-row">
         <div class="field">
-          <label for="email">Work email</label>
-          <input type="email" id="email" name="email" placeholder="name@mail.mil / .gov" required />
+          <label for="email" data-i18n="form_email">Work email</label>
+          <input type="email" id="email" name="email" placeholder="name@irobotics.uz" required />
         </div>
         <div class="field">
-          <label for="phone">Phone</label>
-          <input type="tel" id="phone" name="phone" placeholder="+1 (___) ___-____" />
+          <label for="phone" data-i18n="form_phone">Phone</label>
+          <input type="tel" id="phone" name="phone" placeholder="+998 (__) ___-____" />
         </div>
       </div>
       <div class="form-row">
         <div class="field">
-          <label for="country">Country / Service</label>
-          <input type="text" id="country" name="country" placeholder="USA · UK · CAN · AUS · NZL" />
+          <label for="country" data-i18n="form_country">Country / Service</label>
+          <input type="text" id="country" name="country" placeholder="Uzbekistan · Kazakhstan · International" />
         </div>
         <div class="field">
-          <label for="interest">Inquiry</label>
+          <label for="interest" data-i18n="form_interest">Inquiry</label>
           <select id="interest" name="interest">
             <option>TALON-9 — UGV</option>
             <option>RAVEN-S — ISR drone</option>
@@ -135,48 +140,13 @@
         </div>
       </div>
       <div class="field">
-        <label for="message">Program detail (unclassified only)</label>
-        <textarea id="message" name="message" placeholder="Describe mission set, expected operating environment, and timeline. Do not include classified information."></textarea>
+        <label for="message" data-i18n="form_msg">Program detail (unclassified only)</label>
+        <textarea id="message" name="message" placeholder="Describe mission set, expected operating environment, and timeline."></textarea>
       </div>
-      <button type="submit" class="btn btn-primary" style="width:100%;">Submit Inquiry</button>
-      <div class="form-note">✓ INQUIRY LOGGED · A Intellectual Robotics PROGRAM LEAD WILL RESPOND WITHIN 48 HOURS</div>
-      <div class="itar-notice">
-        <strong style="color:var(--amber);">EXPORT NOTICE:</strong> Intellectual Robotics systems are subject to U.S. export controls under ITAR. Information shared via this form must not be classified. International inquiries are routed through our allied procurement team and require an approved license prior to any transfer of technical data.
-      </div>
+      <button type="submit" class="btn btn-primary" style="width:100%;" data-i18n="form_submit">Submit Inquiry</button>
+      <div class="form-note" data-i18n="form_success">✓ INQUIRY LOGGED · AN INTELLECTUAL ROBOTICS LEAD WILL RESPOND WITHIN 48 HOURS</div>
     </form>
 
-  </div>
-</section>
-
-<!-- FAQ -->
-<section style="background:var(--bg-2);">
-  <div class="container">
-    <div class="section-head center reveal">
-      <span class="eyebrow">Before you ask</span>
-      <h2 class="section-title">Quick answers</h2>
-    </div>
-    <div style="max-width:780px;margin:0 auto;">
-      <div class="faq-item reveal">
-        <div class="faq-q">What happens after I submit an inquiry? <span class="plus">+</span></div>
-        <div class="faq-a">A Intellectual Robotics program lead reviews your inquiry, confirms compliance fit, and reaches out within two business days to schedule a closed brief and prepare a tailored proposal.</div>
-      </div>
-      <div class="faq-item reveal">
-        <div class="faq-q">Do you support FMS (Foreign Military Sales)? <span class="plus">+</span></div>
-        <div class="faq-a">Yes. Our allied procurement team works with DSCA and partner-nation procurement offices throughout the FMS process, and we also support direct commercial sales where an approved license is in place.</div>
-      </div>
-      <div class="faq-item reveal">
-        <div class="faq-q">Can Intellectual Robotics accommodate classified discussions? <span class="plus">+</span></div>
-        <div class="faq-a">Yes. We hold facility clearance and can host classified discussions at our Arlington and Huntsville locations, or travel to your program office's secure environment.</div>
-      </div>
-      <div class="faq-item reveal">
-        <div class="faq-q">Are demonstrations available? <span class="plus">+</span></div>
-        <div class="faq-a">Yes. We run live capability demonstrations at our Fort Bliss test range monthly, and conduct user-jury evaluations with operating units worldwide on request.</div>
-      </div>
-      <div class="faq-item reveal">
-        <div class="faq-q">Which contracting vehicles are available? <span class="plus">+</span></div>
-        <div class="faq-a">Intellectual Robotics is on GSA Schedule, SEWP V, and several IDIQ vehicles. We also support OTA agreements through xTechSearch, DIU, and AFWERX channels.</div>
-      </div>
-    </div>
   </div>
 </section>
 
@@ -188,39 +158,39 @@
         <a href="index.html" class="logo" aria-label="Intellectual Robotics — home">
           <img src="assets/logo-dark.png" alt="Intellectual Robotics" class="logo-img" width="901" height="160" />
         </a>
-        <p class="tag">Unmanned ground, air, and logistics systems — designed and fielded for allied defense forces.</p>
+        <p class="tag" data-i18n="footer_tag">Unmanned ground, air, IoT, and logistics systems — engineered by Intellectual Robotics (iRobotics.uz).</p>
       </div>
       <div>
-        <h4>Explore</h4>
+        <h4 data-i18n="footer_explore">Explore</h4>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="systems.html">Systems</a></li>
-          <li><a href="capabilities.html">Capabilities</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+          <li><a href="systems.html" data-i18n="nav_systems">Systems</a></li>
+          <li><a href="capabilities.html" data-i18n="nav_capabilities">Capabilities</a></li>
+          <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
         </ul>
       </div>
       <div>
-        <h4>Company</h4>
+        <h4 data-i18n="footer_company">Company</h4>
         <ul>
-          <li><a href="index.html#about">About</a></li>
-          <li><a href="contact.html">Careers</a></li>
-          <li><a href="contact.html">Press</a></li>
-          <li><a href="contact.html">Sustainment</a></li>
+          <li><a href="index.html#about" data-i18n="about_eyebrow">About</a></li>
+          <li><a href="contact.html" data-i18n="footer_careers">Careers</a></li>
+          <li><a href="contact.html" data-i18n="footer_press">Press</a></li>
+          <li><a href="contact.html" data-i18n="footer_sustainment">Sustainment</a></li>
         </ul>
       </div>
       <div>
-        <h4>Compliance</h4>
+        <h4 data-i18n="footer_standards">Standards</h4>
         <ul>
-          <li><a href="contact.html">ITAR</a></li>
-          <li><a href="contact.html">CMMC 2.0</a></li>
-          <li><a href="contact.html">DFARS</a></li>
-          <li><a href="contact.html">NDAA §848</a></li>
+          <li><a href="capabilities.html" data-i18n="std_autonomy">Autonomy Stack</a></li>
+          <li><a href="capabilities.html" data-i18n="std_iot">IoT Telemetry</a></li>
+          <li><a href="capabilities.html" data-i18n="std_mil">MIL-STD-810H</a></li>
+          <li><a href="contact.html" data-i18n="std_support">Support</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
       <span>© <span data-year>2026</span> INTELLECTUAL ROBOTICS (IROBOTICS.UZ) · ALL RIGHTS RESERVED</span>
-      <span>EXPORT CONTROLLED · ITAR JURISDICTION</span>
+      <span data-i18n="footer_location">TASHKENT, UZBEKISTAN</span>
     </div>
   </div>
 </footer>
